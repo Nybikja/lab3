@@ -1,5 +1,3 @@
-# from watersport.tester import WaterSportTest
-
 from watersport.manager import WaterSportManager
 from watersport import GamesWithBall, TransportCompetitions
 
