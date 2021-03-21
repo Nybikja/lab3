@@ -6,6 +6,11 @@ class SportType(Enum):
     PHYSICALGAME = 1
 
 
+class SortOrder(Enum):
+    DESC = True
+    ASC = False
+
+
 class WaterSport:
     def __init__(self, sport_type: SportType, name: str = "", amount_of_players: int = 0, price: int = 0):
         self._sport_type = sport_type
@@ -16,4 +21,3 @@ class WaterSport:
     def __str__(self):
         return f"type: {self._sport_type}\nname: {self._name}\namount of players: {self._amount_of_players}\n" \
                f"price: {self._price}\n"
-

@@ -1,4 +1,4 @@
-from watersport import WaterSport, SportType
+from models import WaterSport, SportType
 
 
 class TransportCompetitions(WaterSport):
@@ -10,3 +10,7 @@ class TransportCompetitions(WaterSport):
         self.price = price
         self.type_of_engine = type_of_engine
         self.horsepower = horsepower
+
+    def __str__(self):
+        return f"type: {self._sport_type}\nname: {self._name}\namount of players: {self._amount_of_players}\n" \
+               f"price: {self._price}\ntype of engine: {self.type_of_engine}\nhorsepower: {self.horsepower}\n"
